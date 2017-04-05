@@ -1,0 +1,20 @@
+CREATE DATABASE PruebaDB8;
+USE PruebaDB8
+
+CREATE TABLE Personal (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+nombre VARCHAR(30) NOT NULL,
+apellido VARCHAR(30) NOT NULL,
+departamento VARCHAR(30) NOT NULL,
+salario FLOAT NOT NULL,
+email VARCHAR(100),
+fecha_de_entrada VARCHAR(30) NOT NULL,
+fecha_de_salida VARCHAR(30) NOT NULL
+);
+
+
+INSERT INTO Personal (nombre, apellido, departamento, salario, email, fecha_de_entrada, fecha_de_salida)
+VALUES ('John', 'Doe', 'Depart1', 19000, 'john@example.com', "2012-12-12", "2012-12-12");
+
+INSERT INTO Personal (nombre, apellido, departamento, salario, email, fecha_de_entrada, fecha_de_salida)
+VALUES ('John22', 'Doe22', 'Depart22', 1900022, 'john22@example.com', "2012-12-12", "2012-12-12");
